@@ -3,16 +3,18 @@
 
 ## 개요
 In this assignment, you will experiment with some evolutionary algorithms to minimize a set of benchmark functions given below in Table 1.  
+
 The first function $f_{1}$ is a high-dimensional unimodal function with only one peak in the search space. The functions $f_{2}$ and $f_{3}$ are high-dimensional multimodal functions with a lot of local optima. The function $f_{4}$ is a low-dimensional multimodal functions with only a few local optima. While the function $f_{1}$ – $f_{3}$ are scalable to any dimension, thirty-dimensional versions will be used in your experiments as indicated in column $D$ of Table 1. Since these are function optimization problems, it will be natural to adopt real number representations.  
+
 The recommended genetic operators are simulated binary crossover (SBX) and polynomial mutation. You should carefully determine the values of hyper-parameters such as the crossover rate, mutation rate, and so on. The population size recommended is 100. The termination condition (i.e., the maximum number of evaluations) for each function should be determined by trial and error  
 
 ### Table 1. Benchmark functions to be tested in your experiments
 | Name  | Function | $D$ | Domain  |
 | ------------- | ------------- | ------------- | ------------- |
-| Rosenbrock | $f_{q}(\textbf{x})=\sum^D_{i=1}[100(x_{i + 1}-x^2_{i})^2 + (1 - x_{i})^2]$ <br> $f(\textbf{x}^*)=0$, at $\textbf{x}^*=(1,\dots,1)$ | 30  | $[-30, 30]^D$  |
-| Rastrigin | $f_{2}(\textbf{x})=10D+\sum^D_{i=1}\big(x^2_{i}-10\cos(2\pi\cdot x_{i})\big)$ <br> $f(\textbf{x}^*)=0$, at $\textbf{x}^*=(0,\dots,0)$ | 30 | $[-5.12, 5.12]^D$  |
-| Griewank  | $f_{3}(\textbf{x})=1+\sum^D_{i-1}x^2_{i}/4000-\prod^D_{i=1}\cos\big(x_{i}/\sqrt{i}\big)$ <br> $f(\textbf{x}^*)=0$, at $\textbf{x}^*=(0,\dots,0)$ | 30 | $[-600, 600]^D$  |
-| Six-hump Camel  | $f_{4}(\textbf{x})=4x^2_{1}-2.1x^4_{1}+3^{-1}x^6_{1}+x_{1}x_{2}-4x^2_{2}+4x^4_{2}$ <br> $f(\textbf{x}^*)=-1.0316$, at $\textbf{x}^*=(0.0898, -0.7126)$ and $(-0.0898, 0.7126)$ | 2  | $[-5, 5]^D$  |  
+| Rosenbrock | $f_{1}(\textbf{x})=\sum^D_{i=1}[100(x_{i + 1}-x^2_{i})^2 + (1 - x_{i})^2]$ <br> $f(\textbf{x}^*)=0$, at $\textbf{x}^\ast =(1,\dots,1)$ | 30  | $[-30, 30]^D$  |
+| Rastrigin | $f_{2}(\textbf{x})=10D+\sum^D_{i=1}\big(x^2_{i}-10\cos(2\pi\cdot x_{i})\big)$ <br>  $f(\textbf{x}^*)=0$, at $\textbf{x}^\ast=(0,\dots,0)$ | 30 | $[-5.12, 5.12]^D$  |
+| Griewank  | $f_{3}(\textbf{x})=1+\sum^D_{i-1}x^2_{i}/4000-\prod^D_{i=1}\cos\big(x_{i}/\sqrt{i}\big)$ <br> $f(\textbf{x}^*)=0$, at $\textbf{x}^\ast=(0,\dots,0)$ | 30 | $[-600, 600]^D$  |
+| Six-hump Camel  | $f_{4}(\textbf{x})=4x^2_{1}-2.1x^4_{1}+3^{-1}x^6_{1}+x_{1}x_{2}-4x^2_{2}+4x^4_{2}$ <br> $f(\textbf{x}^*)=-1.0316$, at $\textbf{x}^\ast=(0.0898, -0.7126)$ and $(-0.0898, 0.7126)$ | 2  | $[-5, 5]^D$  |  
 
 ### Experiments
 1. Implement two different versions of a standard genetic algorithm with different selection schemes, one with stochastic uniform sampling (SUS) and the other with binary tournament selection, and then compare their performances.
@@ -37,28 +39,28 @@ The recommended genetic operators are simulated binary crossover (SBX) and polyn
 #### 1.1 Rosenbrock
 
 <div>
-    <img src="img\experiment1\rosenbrock(complete)\rosenbrock_all_bsf_plot.png" width="37%">
+    <img src="img\experiment1\rosenbrock(complete)\rosenbrock_all_bsf_plot.png" width="50%">
     <img src="img\experiment1\rosenbrock(complete)\rosenbrock_sus_bsf_describe.png">
     <img src="img\experiment1\rosenbrock(complete)\rosenbrock_bts_bsf_describe.png">
 </div>
 
 #### 1.2 Rastrigin
 <div>
-    <img src="img\experiment1\rastrigin(complete)\rastrigin_all_bsf_plot.png" width="37%">
+    <img src="img\experiment1\rastrigin(complete)\rastrigin_all_bsf_plot.png" width="50%">
     <img src="img\experiment1\rastrigin(complete)\rastrigin_sus_bsf_describe.png">
     <img src="img\experiment1\rastrigin(complete)\rastrigin_bts_bsf_describe.png">
 </div>
 
 #### 1.3 Griewank
 <div>
-    <img src="img\experiment1\griewank(complete)\griewank_all_bsf_plot.png" width="37%">
+    <img src="img\experiment1\griewank(complete)\griewank_all_bsf_plot.png" width="50%">
     <img src="img\experiment1\griewank(complete)\griewank_sus_bsf_describe.png">
     <img src="img\experiment1\griewank(complete)\griewank_bts_bsf_describe.png">
 </div>
     
 #### 1.4 Six-Hump Camel
 <div>
-    <img src="img\experiment1\six-hump-camel(complete)\six-hump-camel_all_bsf_plot.png" width="37%">
+    <img src="img\experiment1\six-hump-camel(complete)\six-hump-camel_all_bsf_plot.png" width="50%">
     <img src="img\experiment1\six-hump-camel(complete)\six-hump-camel_sus_bsf_describe.png">
     <img src="img\experiment1\six-hump-camel(complete)\six-hump-camel_bts_bsf_describe.png">
 </div>
@@ -74,28 +76,28 @@ The recommended genetic operators are simulated binary crossover (SBX) and polyn
 ### 실험 2
 #### 1.1 Rosenbrock
 <div>
-    <img src="img\experiment2\rosenbrock(complete)\rosenbrock_all_bsf_plot.png" width="37%">
+    <img src="img\experiment2\rosenbrock(complete)\rosenbrock_all_bsf_plot.png" width="50%">
     <img src="img\experiment2\rosenbrock(complete)\rosenbrock_bts_bsf_describe.png">
     <img src="img\experiment2\rosenbrock(complete)\rosenbrock_rts_bsf_describe.png">
 </div>
 
 #### 1.2 Rastrigin
 <div>
-    <img src="img\experiment2\rastrigin(complete)\rastrigin_all_bsf_plot.png" width="37%">
+    <img src="img\experiment2\rastrigin(complete)\rastrigin_all_bsf_plot.png" width="50%">
     <img src="img\experiment2\rastrigin(complete)\rastrigin_bts_bsf_describe.png">
     <img src="img\experiment2\rastrigin(complete)\rastrigin_rts_bsf_describe.png">
 </div>
 
 #### 1.3 Griewank
 <div>
-    <img src="img\experiment2\griewank(complete)\griewank_all_bsf_plot.png" width="37%">
+    <img src="img\experiment2\griewank(complete)\griewank_all_bsf_plot.png" width="50%">
     <img src="img\experiment2\griewank(complete)\griewank_bts_bsf_describe.png">
     <img src="img\experiment2\griewank(complete)\griewank_rts_bsf_describe.png">
 </div>
     
 #### 1.4 Six-Hump Camel
 <div>
-    <img src="img\experiment2\six-hump-camel(complete)\six-hump-camel_all_bsf_plot.png" width="37%">
+    <img src="img\experiment2\six-hump-camel(complete)\six-hump-camel_all_bsf_plot.png" width="50%">
     <img src="img\experiment2\six-hump-camel(complete)\six-hump-camel_bts_bsf_describe.png">
     <img src="img\experiment2\six-hump-camel(complete)\six-hump-camel_rts_bsf_describe.png">
 </div>
