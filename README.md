@@ -39,28 +39,28 @@ The recommended genetic operators are simulated binary crossover (SBX) and polyn
 #### 1.1 Rosenbrock
 
 <div>
-    <img src="img\experiment1\rosenbrock(complete)\rosenbrock_all_bsf_plot.png" width="50%">
+    <img src="img\experiment1\rosenbrock(complete)\rosenbrock_all_bsf_plot.png" width="55%">
     <img src="img\experiment1\rosenbrock(complete)\rosenbrock_sus_bsf_describe.png">
     <img src="img\experiment1\rosenbrock(complete)\rosenbrock_bts_bsf_describe.png">
 </div>
 
 #### 1.2 Rastrigin
 <div>
-    <img src="img\experiment1\rastrigin(complete)\rastrigin_all_bsf_plot.png" width="50%">
+    <img src="img\experiment1\rastrigin(complete)\rastrigin_all_bsf_plot.png" width="55%">
     <img src="img\experiment1\rastrigin(complete)\rastrigin_sus_bsf_describe.png">
     <img src="img\experiment1\rastrigin(complete)\rastrigin_bts_bsf_describe.png">
 </div>
 
 #### 1.3 Griewank
 <div>
-    <img src="img\experiment1\griewank(complete)\griewank_all_bsf_plot.png" width="50%">
+    <img src="img\experiment1\griewank(complete)\griewank_all_bsf_plot.png" width="55%">
     <img src="img\experiment1\griewank(complete)\griewank_sus_bsf_describe.png">
     <img src="img\experiment1\griewank(complete)\griewank_bts_bsf_describe.png">
 </div>
     
 #### 1.4 Six-Hump Camel
 <div>
-    <img src="img\experiment1\six-hump-camel(complete)\six-hump-camel_all_bsf_plot.png" width="50%">
+    <img src="img\experiment1\six-hump-camel(complete)\six-hump-camel_all_bsf_plot.png" width="55%">
     <img src="img\experiment1\six-hump-camel(complete)\six-hump-camel_sus_bsf_describe.png">
     <img src="img\experiment1\six-hump-camel(complete)\six-hump-camel_bts_bsf_describe.png">
 </div>
@@ -68,36 +68,36 @@ The recommended genetic operators are simulated binary crossover (SBX) and polyn
 ### 실험 1. 전체 결과
  Name  | t-statistic | p-value | 유의성 | 성능 |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Rosenbrock |3.1183 | 1 | 0.0057 | BTS | 
-| Rastrigin | 973…640.31 | 1 | 4.19767e-217 | BTS | 
-| Griewank  | 255.8317 | 1 | 4.495064e-35 | BTS | 
-| Six-hump Camel  | 1.1953 | 0.2467 | ✖  | BTS |
+| Rosenbrock |3.1183 | 0.0057 | ○ | BTS | 
+| Rastrigin | 973…640.31 | 4.19767e-217 | ○ | BTS | 
+| Griewank  | 255.8317 | 4.495064e-35 | ○ | BTS | 
+| Six-hump Camel  | 1.1953 | 0.2467 | ☓  | BTS |
 
 ### 실험 2
 #### 1.1 Rosenbrock
 <div>
-    <img src="img\experiment2\rosenbrock(complete)\rosenbrock_all_bsf_plot.png" width="50%">
+    <img src="img\experiment2\rosenbrock(complete)\rosenbrock_all_bsf_plot.png" width="55%">
     <img src="img\experiment2\rosenbrock(complete)\rosenbrock_bts_bsf_describe.png">
     <img src="img\experiment2\rosenbrock(complete)\rosenbrock_rts_bsf_describe.png">
 </div>
 
 #### 1.2 Rastrigin
 <div>
-    <img src="img\experiment2\rastrigin(complete)\rastrigin_all_bsf_plot.png" width="50%">
+    <img src="img\experiment2\rastrigin(complete)\rastrigin_all_bsf_plot.png" width="55%">
     <img src="img\experiment2\rastrigin(complete)\rastrigin_bts_bsf_describe.png">
     <img src="img\experiment2\rastrigin(complete)\rastrigin_rts_bsf_describe.png">
 </div>
 
 #### 1.3 Griewank
 <div>
-    <img src="img\experiment2\griewank(complete)\griewank_all_bsf_plot.png" width="50%">
+    <img src="img\experiment2\griewank(complete)\griewank_all_bsf_plot.png" width="55%">
     <img src="img\experiment2\griewank(complete)\griewank_bts_bsf_describe.png">
     <img src="img\experiment2\griewank(complete)\griewank_rts_bsf_describe.png">
 </div>
     
 #### 1.4 Six-Hump Camel
 <div>
-    <img src="img\experiment2\six-hump-camel(complete)\six-hump-camel_all_bsf_plot.png" width="50%">
+    <img src="img\experiment2\six-hump-camel(complete)\six-hump-camel_all_bsf_plot.png" width="55%">
     <img src="img\experiment2\six-hump-camel(complete)\six-hump-camel_bts_bsf_describe.png">
     <img src="img\experiment2\six-hump-camel(complete)\six-hump-camel_rts_bsf_describe.png">
 </div>
@@ -105,10 +105,10 @@ The recommended genetic operators are simulated binary crossover (SBX) and polyn
 ### 실험 2. 전체 결과
  Name  | t-statistic | p-value | 유의성 | 성능 |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Rosenbrock | -7.5921 | 1 | 3.613611e-7 | BTS | 
-| Rastrigin | -361…685.171 | 1 | 6.409476e-228 | BTS |
-| Griewank  | -22.3373 | 1 | 4.232368e-15 | BTS |
-| Six-hump Camel  | -11.6477 | 1 | 4.278509e-10 | BTS |
+| Rosenbrock | -7.5921 | 3.613611e-7 | ○ | BTS | 
+| Rastrigin | -361…685.171 | 6.409476e-228 | ○ | BTS |
+| Griewank  | -22.3373 | 4.232368e-15 | ○ | BTS |
+| Six-hump Camel  | -11.6477 | 4.278509e-10 | ○ | BTS |
 
 ## 결론
 * 전체적으로 binary tournament selection이 압도적인 성능적 우위를 보임
